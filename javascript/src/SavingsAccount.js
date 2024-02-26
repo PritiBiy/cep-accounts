@@ -1,14 +1,14 @@
 class SavingsAccount {
     constructor(amount) {
-        
+        this._amount = amount;
     }
     
     balance() {
-        throw new TypeError('Not implemented');
+        return this._amount;
     }
 
     deposit(amount) {
-        throw new TypeError('Not implemented');
+        this._amount += amount;
     }
 }
 
